@@ -1,0 +1,55 @@
+{
+  "name": "calculator-backend",
+  "version": "1.0.0",
+  "description": "REST API backend for calculator application with MySQL database",
+  "main": "dist/server.js",
+  "scripts": {
+    "start": "node dist/server.js",
+    "dev": "ts-node-dev --respawn --transpile-only src/server.ts",
+    "build": "tsc",
+    "clean": "rimraf dist",
+    "rebuild": "npm run clean && npm run build",
+    "migrate": "node migrate-simple.js",
+    "migrate-ts": "ts-node src/database/migrate.ts",
+    "setup": "node migrate-simple.js && echo 'Setup complete! Run: npm run dev'",
+    "test": "jest",
+    "test:watch": "jest --watch",
+    "lint": "eslint src/**/*.ts",
+    "lint:fix": "eslint src/**/*.ts --fix",
+    "format": "prettier --write src/**/*.ts",
+    "type-check": "tsc --noEmit"
+  },
+  "keywords": [
+    "calculator",
+    "rest-api",
+    "mysql",
+    "typescript",
+    "express"
+  ],
+  "author": "Your Name",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.18.2",
+    "mysql2": "^3.6.5",
+    "cors": "^2.8.5",
+    "helmet": "^7.1.0",
+    "joi": "^17.11.0",
+    "dotenv": "^16.3.1"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.21",
+    "@types/cors": "^2.8.17",
+    "@types/node": "^20.10.4",
+    "typescript": "^5.3.3",
+    "ts-node": "^10.9.1",
+    "ts-node-dev": "^2.0.0",
+    "rimraf": "^5.0.5"
+  },
+  "optionalDependencies": {
+    "winston": "^3.11.0"
+  },
+  "engines": {
+    "node": ">=18.0.0",
+    "npm": ">=9.0.0"
+  }
+}
