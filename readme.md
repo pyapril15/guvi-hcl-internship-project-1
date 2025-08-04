@@ -2,7 +2,9 @@
 
 A full-stack calculator application with persistent calculation history, built with Next.js frontend and Node.js/MySQL backend.
 
-![Calculator App Screenshot](assets/screenshot.png)
+
+<img src="assets/screenshot.png" height="400" />
+<img src="assets/screenshot_db.png" width="400" />
 
 ## ✨ Features
 
