@@ -142,15 +142,15 @@ Comprehensive health check including database connectivity.
 ### 1. Installation
 ```bash
 # Clone and install dependencies
-git clone <repository-url>
-cd calculator-backend
+git clone https://github.com/pyapril15/guvi-hcl-internship-project-1.git
+cd backend
 npm install
 ```
 
 ### 2. Environment Configuration
 ```bash
 # Create environment file
-cp .env.example .env
+cp .env
 
 # Edit .env with your database credentials
 nano .env
@@ -375,18 +375,6 @@ LOG_LEVEL=warn
 # Database optimization
 DB_CONNECTION_LIMIT=20
 DB_TIMEOUT=30000
-```
-
-### Process Management
-```bash
-# Using PM2 (recommended)
-npm install -g pm2
-npm run build
-pm2 start dist/server.js --name calculator-api
-
-# Using Docker
-docker build -t calculator-backend .
-docker run -p 3006:3006 calculator-backend
 ```
 
 ## 🤝 Integration

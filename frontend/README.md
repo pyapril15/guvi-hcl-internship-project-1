@@ -25,8 +25,8 @@ A modern, responsive calculator web application built with Next.js, featuring pe
 ### 1. Installation
 ```bash
 # Clone the repository
-git clone <repository-url>
-cd calculator-frontend
+git clone https://github.com/pyapril15/guvi-hcl-internship-project-1.git
+cd frontend
 
 # Install dependencies
 npm install
@@ -39,7 +39,7 @@ pnpm install
 ### 2. Environment Configuration
 ```bash
 # Create environment file
-cp .env.example .env.local
+cp .env.local
 
 # Edit .env.local with your backend URL
 ```
@@ -64,9 +64,6 @@ Create a `.env.local` file in the root directory:
 ```env
 # Backend API Configuration
 NEXT_PUBLIC_API_URL=http://localhost:3006/api
-
-# For production deployment:
-# NEXT_PUBLIC_API_URL=https://your-backend-domain.com/api
 ```
 
 ## 📱 Application Features
@@ -259,77 +256,7 @@ The design system is prepared for dark mode implementation with CSS custom prope
 - **Mobile Safari** ✅
 - **Chrome Mobile** ✅
 
-## 🚢 Deployment
 
-### Production Build
-```bash
-# Build for production
-npm run build
-
-# Start production server
-npm start
-
-# Export static files (if needed)
-npm run build && npm run export
-```
-
-### Environment Variables for Production
-```env
-# Production API URL
-NEXT_PUBLIC_API_URL=https://your-backend-domain.com/api
-
-# Optional: Analytics
-NEXT_PUBLIC_GA_ID=your-google-analytics-id
-```
-
-### Deployment Platforms
-
-#### Vercel (Recommended)
-```bash
-# Install Vercel CLI
-npm i -g vercel
-
-# Deploy
-vercel
-
-# Set environment variables in Vercel dashboard
-```
-
-#### Netlify
-```bash
-# Build command: npm run build
-# Publish directory: out (if using static export)
-```
-
-#### Docker
-```dockerfile
-FROM node:18-alpine
-WORKDIR /app
-COPY package*.json ./
-RUN npm ci --only=production
-COPY . .
-RUN npm run build
-EXPOSE 3000
-CMD ["npm", "start"]
-```
-
-## 🛠️ Development Scripts
-
-```bash
-# Development
-npm run dev              # Start development server with hot reload
-npm run build           # Build for production
-npm start              # Start production server
-
-# Code Quality
-npm run lint           # Run ESLint
-npm run lint:fix       # Fix ESLint issues
-npm run type-check     # TypeScript type checking
-
-# Testing
-npm run test           # Run tests (when configured)
-npm run test:watch     # Watch mode testing
-```
 
 ## 🔧 Configuration
 

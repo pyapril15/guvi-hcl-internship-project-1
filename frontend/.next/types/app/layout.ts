@@ -1,4 +1,4 @@
-// File: C:\Users\pytwl\Downloads\34d9d8f1-ef21-45a0-94c6-26bf33d8cf80_4\app\layout.tsx
+// File: D:\codelabpraveen\guvi\project1\calculator\frontend\app\layout.tsx
 import * as entry from '../../../app/layout.js'
 import type { ResolvingMetadata, ResolvingViewport } from 'next/dist/lib/metadata/types/metadata-interface.js'
 
