@@ -1,6 +1,8 @@
-# 🧮 Calculator App
+# 🧮 Simple Calculator With Logs App
 
 A full-stack calculator application with persistent calculation history, built with Next.js frontend and Node.js/MySQL backend.
+
+![Calculator App Screenshot](assets/screenshot.png)
 
 ## ✨ Features
 
